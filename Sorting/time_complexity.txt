@@ -1,0 +1,17 @@
+time complexity defines the amount of time the program takes to process the data.
+
+Constant time algorithms:
+- no loops
+- complexity = 1
+- number of lines to interpret is constant 
+
+Linear time algorithms:
+- has a loop
+- complexity = n
+- has to run the same instructions n times in a range(0,n)
+
+Quadractic time algorithms:
+- has a nested loop
+- complexity = n²
+
+Both single and nested loop -- complexity decided by nested loop
