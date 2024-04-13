@@ -1,0 +1,5 @@
+#to ignore all files in the directory and any of its subdirectories 
+Project_Learn/**/*
+
+#to ignore all .vscode files
+*.vscode
