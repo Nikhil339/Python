@@ -1,0 +1,19 @@
+#to ignore files with a particular extension
+# *.py
+
+#to ignore a file in current working directory
+ /.vscode
+
+#to track a file with an extension which is ignored
+# ![filename].py
+
+#to ignore a folder
+# [foldername]/
+
+#to ignore particular files inside a folder but not inside the subdirectories in the mentioned folder 
+# [foldername]/*.py
+
+#to ignore all the files including the subdirectories with a particular extension
+# [foldername]/**/*.py
+ 
+Project_Learn/first/
