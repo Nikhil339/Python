@@ -1,5 +1,6 @@
 /.vscode
 Project_Learn/
+!Project_Learn/main.py
 #to ignore files with a particular extension
 # *.py
 #to ignore a file in current working directory
