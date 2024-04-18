@@ -16,4 +16,4 @@
 #to ignore all the files including the subdirectories with a particular extension
 # [foldername]/**/*.py
  
- /.vscode
+ .vscode/
