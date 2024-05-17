@@ -3,7 +3,7 @@ Project_Learn/
 #to ignore files with a particular extension
 # *.py
 #to ignore a file in current working directory
- /[filename]
+# /[filename]
 #to track a file with an extension which is ignored
 # ![filename].py
 #to ignore a folder
