@@ -1,40 +1,31 @@
-import string
-
-punc = list(string.punctuation)
-punc.append(" ")
-
 def main():
-    plate = input("Plate: ")
-    if is_valid(plate):
-        print("Valid")
-    else:
-        print("Invalid")
+    menu = {
+        "Baja Taco": 4.25,
+        "Burrito": 7.50,
+        "Bowl": 8.50,
+        "Nachos": 11.00,
+        "Quesadilla": 8.50,
+        "Super Burrito": 8.50,
+        "Super Quesadilla": 9.50,
+        "Taco": 3.00,
+        "Tortilla Salad": 8.00
+    }
 
-def length(s):
-    return 2 <= len(s) <= 6
+    total_cost = 0.0
 
-def others(s):
-    return not any(i in punc for i in s)
+    while True:
+        try:
+            item = input("Item: ").title().strip()
+            if item in menu:
+                total_cost += menu[item]
+                print(f"${total_cost:.2f}")
+            else:
+                # Ignore any input that isn’t an item on the menu
+                pass
+        except EOFError:
+            # Handle EOF to exit the loop
+            print()
+            break
 
-def start2(s):
-    return s[:2].isalpha()
-
-def zero(s):
-    for i in range(1, len(s)):
-        if s[i].isdigit() and s[i] == '0' and s[i-1].isalpha():
-            return False
-    return True
-
-def btw(s):
-    found_digit = False
-    for i in s:
-        if i.isdigit():
-            found_digit = True
-        elif found_digit and i.isalpha():
-            return False
-    return True
-
-def is_valid(s):
-    return length(s) and others(s) and start2(s) and zero(s) and btw(s)
-
-main()
+if __name__ == "__main__":
+    main()
