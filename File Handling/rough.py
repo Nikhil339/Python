@@ -1,7 +1,9 @@
-import os 
+filename = '1.txt' 
 
-source_path = os.path.join(os.getcwd(), 'prime.py')
-os.chdir("Practice_Programs")
-destination_path = os.path.join(os.getcwd(), 'prime.py')
+lines = []
+with open(filename, 'r') as file:
+    for line in file:
+        lines.append(line.strip())
 
-os.rename(source_path, destination_path)
+print("The lines stored in the array are:")
+print(lines)

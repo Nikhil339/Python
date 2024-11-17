@@ -1,1 +1,1 @@
-This program is based on file handling. The porgramming language used is Python!
+This program is based on file handling. The programming language used is Python!
