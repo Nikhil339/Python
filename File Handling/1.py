@@ -21,10 +21,9 @@ print(f"{line1}{line2}")
 file.close()
 
 '''
-print("Now reading the contents of the fi le: ")
+print("Now reading the contents of the file: ")
 fobject=open("3.txt","r")
 for str in fobject:
-    print(str)
+    print(str.strip())
 fobject.close()
 '''
-
